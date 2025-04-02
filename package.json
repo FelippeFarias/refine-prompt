@@ -1,0 +1,28 @@
+{
+  "name": "refine-prompt",
+  "version": "1.2.0",
+  "description": "Transform ordinary prompts into powerful, structured instructions for any large language model",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsx index.ts",
+    "build": "tsc",
+    "dev": "tsx watch index.ts"
+  },
+  "type": "module",
+  "author": "Felippe Farias",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/felippefarias/refine-prompt.git"
+  },
+  "dependencies": {
+    "@langchain/anthropic": "^0.3.15",
+    "@langchain/core": "^0.3.42",
+    "@modelcontextprotocol/sdk": "^1.7.0",
+    "langchain": "^0.3.19"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.2"
+  }
+}
