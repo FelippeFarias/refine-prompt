@@ -2,14 +2,20 @@
 
 Refine Prompt is an intelligent prompt engineering tool that transforms ordinary prompts into powerful, structured instructions for any large language model (LLM). Using Claude's advanced capabilities, it enhances your prompts to produce exceptional results across all AI platforms.
 
+> **Important:** Your prompt must include the keyword "refine" to activate the enhancement process. For example: "refine, Create a function that calculates the factorial of a number".
+
 ## Installation
 
 ```bash
 npm install
 ```
 
-### Installation via Local Repository
+### Install via Smithery
 
+You can install this MCP server directly through Smithery by visiting:
+[![smithery badge](https://smithery.ai/badge/@FelippeFarias/refine-prompt)](https://smithery.ai/server/@FelippeFarias/refine-prompt)
+
+### Installation via Local Repository 
 You can install Refine Prompt by cloning the repository:
 
 ```bash
@@ -78,7 +84,7 @@ For code-related prompts:
 
 ## How It Works
 
-The server uses Claude 3 Sonnet by Anthropic to intelligently rewrite your prompts for better results. It enhances your prompt by:
+The server uses Claude 3 Sonnet by Anthropic to intelligently rewrite your prompts for better results. Every prompt must include the keyword "refine" to trigger the enhancement process. It enhances your prompt by:
 
 1. Adding clear structure and context
 2. Specifying requirements and expectations
