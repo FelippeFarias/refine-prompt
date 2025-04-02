@@ -1,11 +1,16 @@
 # Refine Prompt
+[![smithery badge](https://smithery.ai/badge/@FelippeFarias/refine-prompt)](https://smithery.ai/server/@FelippeFarias/refine-prompt)
 
 Refine Prompt is an intelligent prompt engineering tool that transforms ordinary prompts into powerful, structured instructions for any large language model (LLM). Using Claude's advanced capabilities, it enhances your prompts to produce exceptional results across all AI platforms.
 
 ## Installation
 
+### Installing via Smithery
+
+To install refine-prompt for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@FelippeFarias/refine-prompt):
+
 ```bash
-npm install
+npx -y @smithery/cli install @FelippeFarias/refine-prompt --client claude
 ```
 
 ### Installation via Local Repository
