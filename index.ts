@@ -183,16 +183,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request) => {
         }
 
         // Extract arguments (language might be undefined)
-        const { prompt, language } = args;
-        
-        // Check if prompt has the keyword "refine" and process it only in that case
-        if (!prompt.toLowerCase().includes("refine")) {
-          console.error("Prompt does not include the 'refine' keyword, returning original prompt");
-          return {
-            content: [{ type: "text", text: prompt }],
-            isError: false,
-          };
-        }
+        const { prompt, language } = args; 
 
         // Remove the keyword "refine" from the prompt before processing
         const cleanedPrompt = prompt.replace(/refine,?\s*/i, "").trim();
