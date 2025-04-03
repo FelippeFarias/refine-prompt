@@ -20,8 +20,8 @@ declare const process: {
 
 // MCP Tool definition for rewriting prompts (now generalized)
 const REWRITE_PROMPT_TOOL: Tool = {
-  name: "rewrite_prompt", // Generalized name
-  description: "Rewrites and enhances a user's raw prompt to be clearer, more detailed, and structured, improving the quality of results from Large Language Models (LLMs).", // Generalized description
+  name: "refine_prompt", // Generalized name
+  description: "This tool MUST be used whenever a user asks to refine, rewrite, improve, enhance, or optimize a prompt. It transforms raw prompts into more effective versions that are clearer, more detailed, and better structured to improve results from Large Language Models (LLMs). When users mention 'refine prompt' or similar phrases, use this tool.", // Improved description
   inputSchema: {
     type: "object",
     properties: {
@@ -36,7 +36,7 @@ const REWRITE_PROMPT_TOOL: Tool = {
       // You could add other optional context fields here later, e.g., 'target_audience', 'output_format_preference'
     },
     required: ["prompt"], // Only prompt is strictly required
-    title: "rewrite_prompt_Arguments" // Generalized title
+    title: "refine_prompt_Arguments" // Generalized title
   }
 };
 
